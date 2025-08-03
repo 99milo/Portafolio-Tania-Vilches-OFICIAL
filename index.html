@@ -1,0 +1,131 @@
+<html>
+  <head>        
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Tania Vilches</title>
+    
+    <style>
+      html {
+        font-size: 70%;
+        scroll-behavior: smooth; 
+      }
+
+      section {
+        min-height: 100vh;
+        padding: 5rem 9% 5rem;
+        scroll-margin-top: 100px; 
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <a href="#home" class="logo">Tania Vilches</a>
+
+      <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="opciones">
+        <button id="modo-btn">🌙</button>
+        <button id="idioma-btn">EN</button>
+      </div>
+      
+    </header>
+
+
+    <section id="home" class="home">
+      <div class="home-img">
+        <img src="imagenes/IMG_9282.jpeg" alt="">
+      </div>
+      <div class="home-contenido">
+        <h1>Hola, soy <span>Tania Vilches</span></h1>
+        <h3>Analista Programadora</h3>
+        <div class="iconos-redessociales">
+          <a href="https://cl.linkedin.com/in/tania-vilches-fuentes-6577032b0?trk=people-guest_people_search-card"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/99milo"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="#contacto" class="boton">Contratar</a> 
+      </div>
+    </section>
+
+
+    <section id="servicios" class="servicios">
+      <h2>Servicios</h2>
+      <div class="lista-servicios">
+        <div class="servicio">
+          <i class="fa-solid fa-code"></i>
+          <h3>Desarrollo Web</h3>
+          <p>Creación de sitios web responsivos con HTML, CSS y JavaScript, optimizados para todos los dispositivos.</p>
+        </div>
+        
+        <div class="servicio">
+          <i class="fa-solid fa-database"></i>
+          <h3>Base de Datos</h3>
+          <p>Diseño y gestión de bases de datos eficientes en MongoDB y MySQL para sistemas modernos.</p>
+        </div>
+        
+        <div class="servicio">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h3>Seguridad Informática</h3>
+          <p>Análisis de vulnerabilidades y propuestas de mitigación para proyectos web pequeños o medianos.</p>
+        </div>
+
+        <div class="servicio">
+          <i class="fa-solid fa-paintbrush"></i>
+          <h3>Diseño Creativo</h3>
+          <p>Ilustraciones digitales y material visual personalizado para proyectos, portafolios o redes.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="experiencia" class="home">
+      <h2>Experiencia</h2>
+      <p>Habla de tus proyectos, prácticas, trabajos o freelance.</p>
+    </section>
+
+    <section class="habilidades" id="habilidades">
+      <h2>Mis Habilidades</h2>
+      <div class="galeria-habilidades">
+        <img src="imagenes/python.png" alt="Habilidad 1">
+        <img src="imagenes/js.png" alt="Habilidad 2">
+        <img src="imagenes/html.png" alt="Habilidad 3">
+        <img src="imagenes/css.png" alt="Habilidad 4">
+        <img src="imagenes/boostrap.png" alt="Habilidad 5">
+        <img src="imagenes/mysql.png" alt="Habilidad 6">
+        <img src="imagenes/react.png" alt="Habilidad 7">
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <h2 id="contactame-titulo" class="contactame-titulo">Contáctame</h2>
+      <form action="https://formspree.io/f/xldlljje" method="POST" class="formulario-contacto">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="campo">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tucorreo@email.com" required>
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        </div>
+
+        <button type="submit" class="boton">Enviar mensaje</button>
+      </form>
+    </section>
+    <script src="main.js"></script>
+
+  </body>
+</html>
