@@ -12,8 +12,7 @@ idiomaBtn.addEventListener('click', () => {
   const es = idiomaBtn.innerText === 'EN';
   idiomaBtn.innerText = es ? 'ES' : 'EN';
 
-  // Navegación y encabezados
-  document.querySelector('.logo').innerText = 'Tania Vilches'; // igual en ambos idiomas
+  document.querySelector('.logo').innerText = 'Tania Vilches'; 
   document.querySelector('nav a[href="#home"]').innerText = es ? 'Inicio' : 'Home';
   document.querySelector('nav a[href="#servicios"]').innerText = es ? 'Servicios' : 'Services';
   document.querySelector('nav a[href="#experiencia"]').innerText = es ? 'Experiencia' : 'Experience';
@@ -25,7 +24,6 @@ idiomaBtn.addEventListener('click', () => {
   document.querySelector('#home h3').innerText = es ? 'Analista Programadora' : 'Software Developer';
   document.querySelector('#home .boton').innerText = es ? 'Contratar' : 'Hire me';
 
-  // Servicios
   document.querySelector('#servicios h2').innerText = es ? 'Servicios' : 'Services';
   const servicios = document.querySelectorAll('#servicios .servicio');
   if (servicios.length >= 4) {
@@ -49,10 +47,8 @@ idiomaBtn.addEventListener('click', () => {
   // Habilidades
   document.querySelector('#habilidades h2').innerText = es ? 'Mis Habilidades' : 'My Skills';
 
-  // Contacto
   document.querySelector('#contacto h2').innerText = es ? 'Contáctame' : 'Contact me';
 
-  // Formulario labels y placeholders
   document.querySelector('label[for="nombre"]').innerText = es ? 'Nombre' : 'Name';
   document.getElementById('nombre').placeholder = es ? 'Tu nombre' : 'Your name';
 
@@ -62,6 +58,22 @@ idiomaBtn.addEventListener('click', () => {
   document.querySelector('label[for="mensaje"]').innerText = es ? 'Mensaje' : 'Message';
   document.getElementById('mensaje').placeholder = es ? 'Escribe tu mensaje aquí...' : 'Write your message here...';
 
-  // Botón enviar mensaje
   document.querySelector('#contacto form button[type="submit"]').innerText = es ? 'Enviar mensaje' : 'Send message';
+});
+
+
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+
+menuToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
 });

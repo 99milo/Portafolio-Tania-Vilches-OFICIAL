@@ -178,7 +178,7 @@ span{
 }
 
 body.light-mode .boton {
-  color: #000; /* texto negro en modo claro */
+  color: #000; 
 }
 
 
@@ -330,43 +330,39 @@ body.light-mode .campo textarea {
               -15px -15px 30px #252323;
 }
 
-/* Estilos generales para la sección de servicios */
 .servicios {
-  padding: 5rem 9%;
+  padding: 7rem 9% 5rem; 
   text-align: center;
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Estilos para los ítems de servicios */
+
 .lista-servicios {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 7rem;
 }
 
 .servicio {
-  padding: 2rem;
-  width: 250px;
+  padding: 3rem; 
+  width: 300px; 
   border-radius: 1rem;
   transition: transform 0.3s ease, background-color 0.3s, color 0.3s;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover efecto */
 .servicio:hover {
   transform: translateY(-5px);
 }
 
-/* Iconos */
 .servicio i {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: rgb(111, 201, 99);
   margin-bottom: 1rem;
 }
 
-/* -------- MODO CLARO -------- */
 body.light-mode .servicios {
   background-color: #ffffff;
   color: #000000;
@@ -377,7 +373,6 @@ body.light-mode .servicio {
   color: #000000;
 }
 
-/* -------- MODO OSCURO -------- */
 body.dark-mode .servicios {
   background-color: #121212;
   color: #ffffff;
@@ -400,20 +395,16 @@ body.dark-mode .servicio {
   transform: scale(1.05);
 }
 
-/* Para modo oscuro */
-body.dark-mode .galeria-habilidades img {
+body.dark-mode .galeria-habilidades img{
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-  background-color: #222; /* Fondo oscuro en modo oscuro */
-}
+  background-color: #222; }
 
-/* Color para íconos en modo claro */
 body.light-mode .iconos-redessociales a i {
-  color: #000; /* negro */
+  color: #000; 
 }
 
-/* Color para íconos en modo oscuro */
 body.dark-mode .iconos-redessociales a i {
-  color: #fff; /* blanco */
+  color: #fff; 
 }
 
 body.light-mode .contacto {
@@ -426,13 +417,11 @@ body.light-mode .contactame-titulo {
   color: #000;
 }
 
-/* Galería de habilidades - Modo oscuro */
 body.dark-mode .galeria-habilidades img {
   background: #1b1a1a;
   box-shadow: 15px 15px 30px #111111, -15px -15px 30px #252323;
 }
 
-/* Galería de habilidades - Modo claro */
 body.light-mode .galeria-habilidades img {
   background: #f0f0f0;
   box-shadow: 15px 15px 30px #ccc, -15px -15px 30px #ffffff;
@@ -446,4 +435,155 @@ body.light-mode .galeria-habilidades img {
 .servicios h2 {
 font-size: 4rem;
 margin-bottom: 3rem;
-color: white;}
+color: white;
+}
+
+
+.experiencia {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 5rem 9%;
+  text-align: center;
+}
+
+.galeria-proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.proyecto {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.proyecto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+  transform: scale(1.05);
+}
+
+.proyecto:hover img {
+  transform: scale(1.1);
+}
+
+.info-proyecto {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  text-align: center;
+}
+
+.info-proyecto p {
+  margin: 0;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+body.light-mode .experiencia {
+  background-color: white;
+  color: #111;
+}
+
+body.light-mode .info-proyecto {
+  background: rgba(0, 0, 0, 0.6); 
+}
+
+body.light-mode .info-proyecto p {
+  color: white;
+}
+
+.experiencia h2 {
+font-size: 4rem;
+margin-bottom: 3rem;
+color: white;
+}
+
+
+@media (max-width: 995px) {
+  nav {
+    display: none;
+    position: absolute;
+    top: 60px; /* justo debajo del header */
+    right: 9%;
+    width: 200px;
+    background-color: rgb(19, 19, 20);
+    border-left: 3px solid rgb(111, 201, 99);
+    border-bottom: 3px solid rgb(111, 201, 99);
+    border-bottom-left-radius: 2rem;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    flex-direction: column;
+    z-index: 1000;
+  }
+  
+  nav.active {
+    display: flex;
+  }
+  
+  nav a {
+    display: block;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    border-bottom: none;
+  }
+  
+  nav a:hover,
+  nav a:active {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid rgb(111, 201, 99);
+  }
+
+  /* Mostrar botón hamburguesa */
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+}
+
+
+/* En pantallas grandes, mostrar nav y ocultar botón */
+@media (min-width: 996px) {
+  nav {
+    display: flex !important;
+    position: static !important;
+    width: auto !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    flex-direction: row !important;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* Cuando el menú esté activo */
+nav.active {
+  display: flex;
+  flex-direction: column;
+}

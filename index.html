@@ -24,8 +24,10 @@
 
     <header>
       <a href="#home" class="logo">Tania Vilches</a>
-
-      <nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <i class="fa fa-bars"></i>
+      </button>
+      <nav id="nav-menu">
         <a href="#home" class="active">Home</a>
         <a href="#servicios">Servicios</a>
         <a href="#experiencia">Experiencia</a>
@@ -86,10 +88,32 @@
     </section>
 
 
-    <section id="experiencia" class="home">
+    <section id="experiencia" class="experiencia">
       <h2>Experiencia</h2>
-      <p>Habla de tus proyectos, prácticas, trabajos o freelance.</p>
+      <div class="galeria-proyectos">
+
+        
+        <a href="https://99milo.github.io/pomodoro-proyect" class="proyecto" target="_blank">
+          <img src="imagenes/pomodoro.png" alt="Preview Proyecto 1">
+          <div class="info-proyecto">
+            <p>Estudio con Pomodoro</p>
+          </div>
+        </a>
+
+        
+        <a href="https://link-al-proyecto2.com" class="proyecto" target="_blank">
+          <img src="imagenes/proyecto2.jpg" alt="Preview Proyecto 2">
+          <div class="info-proyecto">
+            <p>Nombre del Proyecto 2</p>
+          </div>
+        </a>
+
+        
+
+      </div>
     </section>
+
+
 
     <section class="habilidades" id="habilidades">
       <h2>Mis Habilidades</h2>
@@ -101,6 +125,7 @@
         <img src="imagenes/boostrap.png" alt="Habilidad 5">
         <img src="imagenes/mysql.png" alt="Habilidad 6">
         <img src="imagenes/react.png" alt="Habilidad 7">
+        <img src="imagenes/Lua.png" alt="Habilidad 8">
       </div>
     </section>
 
